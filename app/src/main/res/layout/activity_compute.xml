@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background"
+    tools:context=".ComputeActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Compute Activity"
+        android:textColor="#ECEFF1"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.09" />
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp"    >
+    <TextView
+        android:text="@string/number1_colon"
+        android:textColor="#ECEFF1"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNumber1ComputeActivity" />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ECEFF1"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:ems="2"
+        android:id="@+id/edtTxtNumber1ComputeActivity" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/number2_colon"
+            android:textColor="#ECEFF1"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNumber2ComputeActivity" />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ECEFF1"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:ems="2"
+        android:id="@+id/edtTxtNumber2ComputeActivity" />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+                android:text="@string/result_colon"
+                android:textColor="#ECEFF1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtResulttComputeActivity" />
+    <TextView
+        android:text=""
+        android:textColor="#ECEFF1"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtResultComputeActivity" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:layout_marginTop="30dp"
+        android:textColor="#ECEFF1"
+        android:background="#AD1457"
+        android:id="@+id/btnAddComputeActivity" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/multiply"
+        android:layout_marginTop="20dp"
+        android:textColor="#ECEFF1"
+        android:background="#AD1457"
+        android:id="@+id/btnMultiplyComputeActivity" />
+
+</LinearLayout>
